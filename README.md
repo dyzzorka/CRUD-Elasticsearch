@@ -49,6 +49,8 @@ php crud.php
 ```
 Si tout fonctionne correctement, vous devriez obtenir l'affichage suivant :
 
+![image](https://github.com/dyzzorka/CRUD-Elasticsearch/assets/83311421/c5cd8c8d-9dec-4e4b-931f-3576a9f29f50)
+
 Si vous souhaitez aller plus loin, vous pouvez utiliser cette [URL](http://localhost:9200/) pour tester votre base de données Elasticsearch. Vous pouvez vous aider de la documentation officielle pour mieux comprendre son fonctionnement([documentation officiel](http://localhost:9200/)).
 
 Si vous voulez allez plus loin vous pouvez utiliser cette [url](http://localhost:9200/) pour tester votre base de donnée elasticsearch, aidez vous de la documentation officiel pour mieux comprendre le fonctionement ([documentation officiel](http://localhost:9200/))
