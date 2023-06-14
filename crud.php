@@ -73,38 +73,38 @@ function deleteRecord($id)
 function testCRUD()
 {
     $data = [
-        'title' => 'Titre',
-        'name' => 'Nom',
-        'adress' => 'Adresse',
-        'realAdress' => 'Adresse réelle',
-        'departement' => 'Département',
-        'country' => 'Pays',
-        'tel' => 'Numéro de téléphone',
-        'email' => 'Adresse e-mail'
+        'title' => 'title',
+        'name' => 'name',
+        'adress' => 'adress',
+        'realAdress' => 'realAdress',
+        'departement' => 'departement',
+        'country' => 'country',
+        'tel' => 'tel',
+        'email' => 'email'
     ];
 
-    $createdDocument = createRecord($data);
-    $createdDocumentId = $createdDocument['_id'];
-    echo "Document créé avec l'ID : $createdDocumentId\n";
+    $doc = createRecord($data);
+    $id = $doc['_id'];
+    echo "Document créé avec l'ID : $id\n";
 
-    $document = getRecord($createdDocumentId);
+    $document = getRecord($id);
     print_r($document['_source']);
 
     $dataToUpdate = [
-        'title' => 'Nouveau titre',
-        'name' => 'Nouveau nom',
-        'adress' => 'Nouvelle adresse',
-        'tel' => 'Nouveau numéro de téléphone'
+        'title' => 'new title',
+        'name' => 'new name',
+        'adress' => 'new adress',
+        'tel' => 'new tel',
     ];
 
-    $updateResponse = updateRecord($createdDocumentId, $dataToUpdate);
-    echo "Document mis à jour : " . ($updateResponse['result'] == 'updated' ? 'oui' : 'non') . "\n";
+    $updateResponse = updateRecord($id, $dataToUpdate);
+    echo "update ? : " . ($updateResponse['result'] == 'updated' ? 'yes' : 'nop') . "\n";
 
-    $updatedDocument = getRecord($createdDocumentId);
+    $updatedDocument = getRecord($id);
     print_r($updatedDocument['_source']);
 
-    $deleteResponse = deleteRecord($createdDocumentId);
-    echo "Document supprimé : " . ($deleteResponse['result'] == 'deleted' ? 'oui' : 'non') . "\n";
+    $deleteResponse = deleteRecord($id);
+    echo "delete ? : " . ($deleteResponse['result'] == 'deleted' ? 'yes' : 'no') . "\n";
 }
 
 
