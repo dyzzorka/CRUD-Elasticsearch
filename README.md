@@ -12,7 +12,7 @@ Avant de cloner le référentiel, il nous faut executer les deux commande suivan
 
 ```bash
 git config --global user.name "Votre nom Git"
-git config --global user.email Votre address mail
+git config --global user.email "Votre address mail"
 ```
 
 Une fois l'installation de Git effectuée, nous devrons cloner le projet. Pour ce faire, ouvrez un terminal à l'emplacement où vous souhaitez cloner le référentiel, puis exécutez la commande suivante :
