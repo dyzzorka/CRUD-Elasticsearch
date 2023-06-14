@@ -8,6 +8,13 @@ Elasticsearch est un moteur de recherche et d'analyse distribué gratuit et ouve
 
 Nous aurons besoin de cloner ce référentiel, donc rendez-vous sur le site de [Git](https://git-scm.com/downloads), téléchargez la version Windows de Git, puis procédez à son installation.
 
+Avant de cloner le référentiel, il nous faut executer les deux commande suivante pour permettre la bonne utilisation de Git.
+
+```bash
+git config --global user.name "Votre nom Git"
+git config --global user.email Votre address mail
+```
+
 Une fois l'installation de Git effectuée, nous devrons cloner le projet. Pour ce faire, ouvrez un terminal à l'emplacement où vous souhaitez cloner le référentiel, puis exécutez la commande suivante :
 ```bash
 git clone https://github.com/dyzzorka/CRUD-Elasticsearch.git
