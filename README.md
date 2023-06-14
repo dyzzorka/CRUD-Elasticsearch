@@ -46,6 +46,11 @@ ou
 #
 ## Démarrage
 
+Pour commencer, exécutez la commande suivante pour mettre à jour les dépendances :
+```bash
+composer install
+```
+
 Pour remplir la base de données avec les données présentes dans le fichier .csv, vous devez vous rendre dans le répertoire du projet, puis exécuter la commande suivante :
 ```bash
 php generateIndex.php
